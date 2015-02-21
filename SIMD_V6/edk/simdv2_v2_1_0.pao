@@ -1,0 +1,21 @@
+##############################################################################
+## Filename:          /raid/home/sbandi/work/temp/virtex6_simd/edk/pcores/simdv2_v1_00_a/data/simdv2_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Wed Jul 23 16:10:06 2014 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib simdv2_v1_00_a generic_values_pe vhdl
+lib simdv2_v1_00_a memory vhdl			#File for RAM memory for PE 
+lib simdv2_v1_00_a register_bank vhdl		#File for Register file of PE
+lib simdv2_v1_00_a alu vhdl			#File for 8 mode ALU of PE
+lib simdv2_v1_00_a pe vhdl			#File for PE(Processing Element)
+lib simdv2_v1_00_a bram_code vhdl		#ROM (bram) memory that contains the the code
+lib simdv2_v1_00_a sm_v2 vhdl			#State Machine of 7 states
+lib simdv2_v1_00_a simdv2_glue vhdl		#File that instantiates all above components and implements glue logic
+
+################# User: sbandi added above this line, NO edit below this line #######################
+	
+lib proc_common_v3_00_a  all 
+lib axi_lite_ipif_v1_01_a  all 
+lib simdv2_v1_00_a user_logic vhdl
+lib simdv2_v1_00_a simdv2 vhdl
